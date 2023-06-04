@@ -4,6 +4,7 @@ metadata:
   name: pi
 spec:
   suspend: false
+  jobHistoryLimit: 3
   template:
     template:
       spec:
@@ -12,4 +13,4 @@ spec:
           image: perl:5.34.0
           command: ["exit",  "1"]
         restartPolicy: Never
-    backoffLimit: 4
+    backoffLimit: 0
