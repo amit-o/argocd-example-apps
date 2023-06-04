@@ -3,6 +3,7 @@ kind: ArgoJob
 metadata:
   name: pi
 spec:
+  suspend: false
   template:
     template:
       spec:
