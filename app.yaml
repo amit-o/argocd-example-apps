@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: https://github.com/amit-o/argocd-example-apps.git
     targetRevision: HEAD
-    path: guestbook
+    path: apps-of-apps
   destination:
     server: https://kubernetes.default.svc
     namespace: guestbook
