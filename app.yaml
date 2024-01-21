@@ -10,4 +10,4 @@ spec:
     path: apps-of-apps
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
+    namespace: default
