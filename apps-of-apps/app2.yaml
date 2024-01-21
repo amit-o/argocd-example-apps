@@ -1,0 +1,15 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: guestbook
+  labels:
+    argocd.argoproj.io/sync-wave: "2"
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/amit-o/argocd-example-apps.git
+    targetRevision: HEAD
+    path: guestbook
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: guestbook
