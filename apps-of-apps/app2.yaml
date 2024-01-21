@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: guestbook-2
-  labels:
+  annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
   project: default
@@ -12,4 +12,4 @@ spec:
     path: guestbook
   destination:
     server: https://kubernetes.default.svc
-    namespace: guestbook
+    namespace: default
